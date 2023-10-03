@@ -7,6 +7,22 @@ export default function About() {
     <>
       <Head>
         <title>Open Martial Path Institute - About</title>
+        <meta
+          name="description"
+          content="The Open Martial Path Institute, LLC offers classes in traditional Korean martial arts in the form of Hapkido and Kumdo, as well as the modern comprehensive eclectic Yuen Sou Fa. Separate classes in Tai Chi Chuan and self defense are also available."
+        />
+        <meta
+          property="og:title"
+          content="Open Martial Path Institute - About"
+          key="title"
+        />
+        <meta
+          property="og:description"
+          content="The four cornerstones of our Kwan are Hapkido, Kumdo, Yuen Sou Fa, and
+          Tai Chi Chuan."
+        />
+        <meta property="og:image" content="/david.png" />
+        <meta property="og:url" content="https://ompinstitute.com/about" />
       </Head>
       <div className="flex flex-col justify-center items-center">
         <div className="flex items-center justify-center flex-col md:flex-row mb-12">

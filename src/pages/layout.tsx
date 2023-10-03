@@ -24,7 +24,7 @@ export default function RootLayout({
 
 const Header = () => {
   return (
-    <div className="px-24 mb-12">
+    <div className="px-8 sm:px-24 mb-12">
       <div className="absolute flex top-5 right-5 sm:right-10 gap-4 text-lg justify-center align-center">
         <Link
           className="flex items-center hover:text-yellow-500 dark:hover:text-yellow-300"
@@ -44,7 +44,7 @@ const Header = () => {
         >
           Facebook
         </a>
-        <a href="mailto:info@ompinstitute.com">
+        <a className="hidden sm:block" href="mailto:info@ompinstitute.com">
           <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-1 px-2 rounded-lg">
             Contact Us
           </button>
