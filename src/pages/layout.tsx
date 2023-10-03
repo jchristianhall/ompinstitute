@@ -24,20 +24,31 @@ export default function RootLayout({
 
 const Header = () => {
   return (
-    <div className="px-24">
-      <div className="absolute flex top-5 right-5 sm:right-10 gap-4 text-lg">
+    <div className="px-24 mb-12">
+      <div className="absolute flex top-5 right-5 sm:right-10 gap-4 text-lg justify-center align-center">
         <Link
-          className="hover:text-yellow-500 dark:hover:text-yellow-300"
+          className="flex items-center hover:text-yellow-500 dark:hover:text-yellow-300"
           href="/"
         >
           Home
         </Link>
         <Link
-          className="hover:text-yellow-500 dark:hover:text-yellow-300"
+          className="flex items-center hover:text-yellow-500 dark:hover:text-yellow-300"
           href="/about"
         >
           About
         </Link>
+        <a
+          className="flex items-center hover:text-yellow-500 dark:hover:text-yellow-300"
+          href="https://www.facebook.com/OpenMartialPathInstituteLLC"
+        >
+          Facebook
+        </a>
+        <a href="mailto:info@ompinstitute.com">
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-1 px-2 rounded-lg">
+            Contact Us
+          </button>
+        </a>
       </div>
       <div className="flex items-center justify-center gap-4 mb-8 sm:flex lg:hidden">
         <Image
@@ -58,7 +69,7 @@ const Header = () => {
         />
       </div>
 
-      <div className="flex items-center justify-center gap-4 mb-20 flex-col lg:flex-row">
+      <div className="flex items-center justify-center mb-8 gap-4 flex-col lg:flex-row">
         <Image
           className="hidden lg:block"
           src="/yuen-sou-fa-logo.png"
@@ -85,6 +96,14 @@ const Header = () => {
           height={150}
           priority
         />
+      </div>
+
+      <div className="flex items-center justify-center gap-4 mb-8">
+        <a href="mailto:info@ompinstitute.com">
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-black text-xl font-semibold py-2 px-4 rounded-lg">
+            Contact Us
+          </button>
+        </a>
       </div>
     </div>
   );
